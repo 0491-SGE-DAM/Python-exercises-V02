@@ -254,18 +254,95 @@ Desviación típica con 4 decimales
 
 > **Entrada**
 
+```
 2,4,4,4,5,5,7,9
+```
 
 > **Salida**
 
+```
 2
+```
 
 <br>
 
 > **Entrada**
 
+```
 5,4,5,5,5,5,5,4,5
+```
 
 > **Salida**
 
+```
 0.4157
+```
+
+## 006 Montando Legos
+
+_Nivel_ [sin definir]
+
+La empresa _Diversiones y Festejos Infantiles_ ha pensado en un nuevo juego que va a poern en marcha cuando hagan eventos por las calles: montar con piezas de Lego la fila más larga posible.
+
+El problema es que los espacios que les suelen asignar para este tipo de juegos no es muy grande y si los niños llegan al límite del recinto y les quedan piezas por poner suelen acabar llorando y claro, no les daría buena imagen.
+
+Para minimizar el problema, el encargado del evento necesita saber cuál puede ser la longitud máxima de la fila que los niños podrían alcanzar si coloca todas las piezas disponibles y así, solicitar más espacio.
+
+Todos las piezas son unidireccionales, y tienen longitudes de 1, 2, 3, 4, y 5 bloques. Las únicas dos condiciones son:
+
+* que todas las piezas de la fila tienen que ir pegadas (no puede haber espacio entre ellas)
+* que para que esta no se desmonte, hay que unir las piezas con otra pieza en una fila superior (las piezas de esta fila no tiene porque estar juntas). Una pieza de esta fila superior (una pieza de unión) sólo puede unir dos piezas.
+
+![Piezas de 1, 2, 3, 4 y 5 bloques](./piezas.png "Piezas de 1, 2, 3, 4 y 5 bloques")
+
+Piezas de 1, 2, 3, 4 y 5 bloques
+
+**Entrada**
+
+- En primer lugar, un número N indicando cuántos casos de prueba habrá. 1 ≤ N ≤ 1000
+- Por cada caso de prueba habrá 5 líneas. Cada una de esas líneas constará de:
+    Número de piezas de 1 bloque
+    Número de piezas de 2 bloques
+    Número de piezas de 3 bloques
+    Número de piezas de 4 bloques
+    Número de piezas de 5 bloques
+    De cada una de las piezas podrá haber un máximo de 10000 unidades.
+
+**Salida**
+
+- Longitud máxima posible de la fila inferior de cada caso de prueba
+
+### Ejemplos
+
+<br>
+
+> **Entrada**
+
+```
+3
+0
+1
+2
+0
+0
+0
+1
+1
+1
+1
+3
+0
+0
+1
+1
+```
+
+> **Salida**
+
+```
+6
+9
+6
+```
+
+<br>
